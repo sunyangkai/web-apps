@@ -1,0 +1,263 @@
+.sale-app {
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.sale-content {
+  margin-top: 20px;
+}
+
+/* Campaign List Styles */
+.campaign-list {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+}
+
+.campaign-list h2 {
+  color: #333;
+  margin-bottom: 30px;
+}
+
+.campaign-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(350px, 1fr));
+  gap: 20px;
+}
+
+.campaign-card {
+  border: 1px solid #e0e0e0;
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.2s, box-shadow 0.2s;
+}
+
+.campaign-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.card-header {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  color: white;
+  padding: 20px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h3 {
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.status-badge {
+  padding: 4px 12px;
+  border-radius: 12px;
+  font-size: 0.85rem;
+  font-weight: 500;
+}
+
+.status-active {
+  background-color: #d1fae5;
+  color: #065f46;
+}
+
+.status-scheduled {
+  background-color: #fef3c7;
+  color: #92400e;
+}
+
+.status-ended {
+  background-color: #e5e7eb;
+  color: #374151;
+}
+
+.card-body {
+  padding: 20px;
+}
+
+.campaign-type {
+  margin-bottom: 15px;
+  color: #555;
+}
+
+.campaign-stats {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 10px;
+  margin: 15px 0;
+}
+
+.stat-item {
+  display: flex;
+  flex-direction: column;
+}
+
+.stat-label {
+  font-size: 0.85rem;
+  color: #666;
+  margin-bottom: 4px;
+}
+
+.stat-value {
+  font-size: 1.1rem;
+  font-weight: 600;
+  color: #333;
+}
+
+.campaign-dates {
+  margin: 15px 0;
+  padding: 10px;
+  background-color: #f9fafb;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.campaign-dates div {
+  margin: 4px 0;
+}
+
+.budget-bar {
+  height: 8px;
+  background-color: #e5e7eb;
+  border-radius: 4px;
+  overflow: hidden;
+  margin: 10px 0 5px 0;
+}
+
+.budget-progress {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+.budget-text {
+  font-size: 0.85rem;
+  color: #666;
+  text-align: right;
+}
+
+.card-footer {
+  padding: 15px 20px;
+  background-color: #f9fafb;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* Campaign Detail Styles */
+.campaign-detail {
+  background: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+  margin-top: 20px;
+}
+
+.campaign-detail h2 {
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.detail-card {
+  max-width: 900px;
+}
+
+.detail-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+  border-bottom: 2px solid #e0e0e0;
+  margin-bottom: 30px;
+}
+
+.detail-header h3 {
+  margin: 0;
+  color: #333;
+  font-size: 1.8rem;
+}
+
+.detail-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 30px;
+  margin-bottom: 30px;
+}
+
+.detail-section {
+  background-color: #f9fafb;
+  padding: 20px;
+  border-radius: 8px;
+}
+
+.detail-section h4 {
+  margin: 0 0 15px 0;
+  color: #555;
+  font-size: 1.1rem;
+  padding-bottom: 10px;
+  border-bottom: 2px solid #e0e0e0;
+}
+
+.info-row {
+  display: flex;
+  justify-content: space-between;
+  padding: 10px 0;
+  border-bottom: 1px solid #e5e7eb;
+}
+
+.info-row:last-child {
+  border-bottom: none;
+}
+
+.info-row .label {
+  font-weight: 500;
+  color: #666;
+}
+
+.info-row .value {
+  color: #333;
+  font-weight: 600;
+}
+
+.info-row .value.spent {
+  color: #dc2626;
+}
+
+.info-row .value.remaining {
+  color: #059669;
+}
+
+.progress-bar-container {
+  margin-top: 15px;
+}
+
+.progress-bar {
+  height: 12px;
+  background-color: #e5e7eb;
+  border-radius: 6px;
+  overflow: hidden;
+  margin-bottom: 8px;
+}
+
+.progress-fill {
+  height: 100%;
+  background: linear-gradient(90deg, #667eea 0%, #764ba2 100%);
+  transition: width 0.3s ease;
+}
+
+.progress-text {
+  font-size: 0.9rem;
+  color: #666;
+  display: block;
+  text-align: right;
+}
+
+.detail-actions {
+  margin-top: 30px;
+  display: flex;
+  gap: 10px;
+  flex-wrap: wrap;
+}

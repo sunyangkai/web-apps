@@ -11,7 +11,10 @@
     "lint": "echo \"Linting user...\"",
     "test": "echo \"Testing user...\""
   },
-  "dependencies": {},
+  "dependencies": {
+    "react": "^16.14.0",
+    "react-dom": "^16.14.0"
+  },
   "devDependencies": {
     "@babel/core": "^7.20.0",
     "@babel/preset-env": "^7.20.0",

@@ -9,6 +9,7 @@ module.exports = {
     static: {
       directory: path.join(__dirname, 'dist'),
     },
+    host: '0.0.0.0',
     port: 3002,
     hot: true,
     headers: {
@@ -16,7 +17,7 @@ module.exports = {
     },
   },
   output: {
-    publicPath: 'http://localhost:3002/',
+    publicPath: 'http://192.168.2.153:3002/',
     clean: true,
   },
   resolve: {
@@ -45,7 +46,7 @@ module.exports = {
       name: 'sale',
       filename: 'remoteEntry.js',
       remotes: {
-        base: 'base@http://localhost:3000/remoteEntry.js',
+        base: 'base@http://192.168.2.153:3000/remoteEntry.js',
       },
       exposes: {
         './CampaignList': './src/components/CampaignList',
@@ -54,13 +55,11 @@ module.exports = {
       shared: {
         react: {
           singleton: true,
-          requiredVersion: false,
-          import: false, // 不打包 react，完全从 base 获取
+          requiredVersion: '^16.14.0',
         },
         'react-dom': {
           singleton: true,
-          requiredVersion: false,
-          import: false, // 不打包 react-dom，完全从 base 获取
+          requiredVersion: '^16.14.0',
         },
       },
     }),

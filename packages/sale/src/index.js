@@ -1,5 +1,2 @@
-import React from 'base/react';
-import ReactDOM from 'base/react-dom';
-import App from './App';
-
-ReactDOM.render(<App />, document.getElementById('root'));
+// 异步导入，等待 Module Federation 初始化
+import('./bootstrap');

@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'base/react';
+import React, { Suspense, lazy } from 'react';
 import { formatDate, formatCurrency } from 'base/utils';
 
 const Button = lazy(() => import('base/Button'));

@@ -62,6 +62,13 @@ importers:
         version: 4.15.2(webpack-cli@5.1.4)(webpack@5.99.9)
 
   packages/sale:
+    dependencies:
+      react:
+        specifier: ^16.14.0
+        version: 16.14.0
+      react-dom:
+        specifier: ^16.14.0
+        version: 16.14.0(react@16.14.0)
     devDependencies:
       '@babel/core':
         specifier: ^7.20.0
@@ -98,6 +105,13 @@ importers:
         version: 4.15.2(webpack-cli@5.1.4)(webpack@5.99.9)
 
   packages/user:
+    dependencies:
+      react:
+        specifier: ^16.14.0
+        version: 16.14.0
+      react-dom:
+        specifier: ^16.14.0
+        version: 16.14.0(react@16.14.0)
     devDependencies:
       '@babel/core':
         specifier: ^7.20.0

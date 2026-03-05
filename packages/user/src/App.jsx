@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'base/react';
+import React, { Suspense, lazy } from 'react';
 import UserList from './components/UserList';
 import UserProfile from './components/UserProfile';
 import './styles/user.css';

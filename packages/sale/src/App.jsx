@@ -1,4 +1,4 @@
-import React, { Suspense, lazy } from 'base/react';
+import React, { Suspense, lazy } from 'react';
 import CampaignList from './components/CampaignList';
 import CampaignDetail from './components/CampaignDetail';
 import './styles/sale.css';

@@ -11,6 +11,8 @@
   "scripts": {
     "dev": "turbo run dev",
     "build": "turbo run build",
+    "build:test": "NODE_ENV=test turbo run build",
+    "build:prod": "NODE_ENV=production turbo run build",
     "clean": "turbo run clean",
     "lint": "turbo run lint",
     "test": "turbo run test",
@@ -24,9 +26,12 @@
     "clean:all": "pnpm -r run clean && rimraf node_modules packages/*/node_modules",
     "reset": "pnpm run clean:all && pnpm install",
     "graph": "turbo run build --graph",
-    "cache:clear": "turbo run build --force"
+    "cache:clear": "turbo run build --force",
+    "sm:init": "git submodule update --init --recursive",
+    "sm:update": "git submodule update --remote --merge"
   },
   "devDependencies": {
+    "dotenv-webpack": "^8.1.1",
     "prettier": "^3.0.0",
     "rimraf": "^5.0.0",
     "turbo": "^1.11.0"

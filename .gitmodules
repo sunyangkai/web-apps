@@ -1,0 +1,12 @@
+[submodule "packages/base"]
+	path = packages/base
+	url = git@github-syk:sunyangkai/web-apps-base.git
+	branch = master
+[submodule "packages/user"]
+	path = packages/user
+	url = git@github-syk:sunyangkai/web-apps-user.git
+	branch = master
+[submodule "packages/sale"]
+	path = packages/sale
+	url = git@github-syk:sunyangkai/web-apps-sale.git
+	branch = master

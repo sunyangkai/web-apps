@@ -10,3 +10,7 @@
 	path = packages/sale
 	url = git@github-syk:sunyangkai/web-apps-sale.git
 	branch = master
+[submodule "packages/host"]
+	path = packages/host
+	url = git@github-syk:sunyangkai/web-apps-host.git
+	branch = master

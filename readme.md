@@ -38,9 +38,9 @@ packages/
 
 ## 文档
 
-- **快速开始**: [QUICK_START.md](./QUICK_START.md)
-- **Host 使用**: [HOST_USAGE.md](./HOST_USAGE.md)
-- **Submodule 管理**: [SUBMODULES.md](./SUBMODULES.md)
+- **快速开始**: [QUICK_START.md](./doc/QUICK_START.md)
+- **Host 使用**: [HOST_USAGE.md](./doc/HOST_USAGE.md)
+- **Submodule 管理**: [SUBMODULES.md](./doc/SUBMODULES.md)
 - **详细启动指南**: [packages/host/START_GUIDE.md](./packages/host/START_GUIDE.md)
 
 ## 技术栈

@@ -137,6 +137,9 @@ importers:
       css-loader:
         specifier: ^6.7.0
         version: 6.11.0(webpack@5.99.9)
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
       html-webpack-plugin:
         specifier: ^5.5.0
         version: 5.6.6(webpack@5.99.9)
@@ -180,6 +183,9 @@ importers:
       css-loader:
         specifier: ^6.7.0
         version: 6.11.0(webpack@5.99.9)
+      dotenv:
+        specifier: ^17.3.1
+        version: 17.3.1
       html-webpack-plugin:
         specifier: ^5.5.0
         version: 5.6.6(webpack@5.99.9)
